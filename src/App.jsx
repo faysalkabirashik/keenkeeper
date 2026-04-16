@@ -1,8 +1,8 @@
 function App() {
   return (
-    <>
-      <h1>KeenKeeper</h1>
-    </>
+    <div className="p-10">
+      <button className="btn btn-primary">KeenKeeper</button>
+    </div>
   );
 }
 
