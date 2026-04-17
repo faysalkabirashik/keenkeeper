@@ -17,21 +17,9 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      // {
-      //   path: "/friend/:id",
-      //   element: <FriendDetails />,
-      // },
       {
         path: "/friend/:id",
         element: <FriendDetails />,
-        loader: async ({ params }) => {
-          const res = await fetch("/friends.json");
-          const data = await res.json();
-
-          return data.find(
-            friend => friend.id === parseInt(params.id)
-          );
-        },
       },
       {
         path: "/timeline",
