@@ -3,7 +3,7 @@
 KeenKeeper is a relationship management web application where users can track friendships, manage interactions, and maintain meaningful personal connections.
 
 ## Live Site
-[(Add deployed link here)](https://ph-keenkeeper.netlify.app/)
+(https://ph-keenkeeper.netlify.app/)
 
 ## Technologies Used
 
