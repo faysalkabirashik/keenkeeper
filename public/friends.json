@@ -1,0 +1,148 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "davidkim@gmail.com",
+    "days_since_contact": 62,
+    "status": "almost due",
+    "tags": ["WORK"],
+    "bio": "Former teammate.",
+    "goal": 30,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "emma@gmail.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["FAMILY"],
+    "bio": "Close cousin.",
+    "goal": 30,
+    "next_due_date": "2026-04-12"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "lisa@gmail.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["WORK"],
+    "bio": "Design partner.",
+    "goal": 20,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+    "email": "james@gmail.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["HOBBY", "TRAVEL"],
+    "bio": "Travel partner.",
+    "goal": 20,
+    "next_due_date": "2026-04-10"
+  },
+
+  {
+    "id": 5,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/women/55.jpg",
+    "email": "d2@gmail.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["WORK"],
+    "bio": "Friend",
+    "goal": 20,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 6,
+    "name": "Emma Wilson",
+    "picture": "https://randomuser.me/api/portraits/women/20.jpg",
+    "email": "e2@gmail.com",
+    "days_since_contact": 62,
+    "status": "on-track",
+    "tags": ["FAMILY"],
+    "bio": "Friend",
+    "goal": 20,
+    "next_due_date": "2026-05-10"
+  },
+  {
+    "id": 7,
+    "name": "Lisa Nakamura",
+    "picture": "https://randomuser.me/api/portraits/men/70.jpg",
+    "email": "l2@gmail.com",
+    "days_since_contact": 62,
+    "status": "on-track",
+    "tags": ["WORK"],
+    "bio": "Friend",
+    "goal": 20,
+    "next_due_date": "2026-05-10"
+  },
+  {
+    "id": 8,
+    "name": "James Wright",
+    "picture": "https://randomuser.me/api/portraits/men/71.jpg",
+    "email": "j2@gmail.com",
+    "days_since_contact": 62,
+    "status": "almost due",
+    "tags": ["HOBBY", "TRAVEL"],
+    "bio": "Friend",
+    "goal": 20,
+    "next_due_date": "2026-04-20"
+  },
+
+  {
+    "id": 9,
+    "name": "David Kim",
+    "picture": "https://randomuser.me/api/portraits/women/23.jpg",
+    "email": "d3@gmail.com",
+    "days_since_contact": 62,
+    "status": "almost due",
+    "tags": ["WORK"],
+    "bio": "Friend",
+    "goal": 20,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 10,
+    "name": "Emma Wilson",
+    "picture": "https://randomuser.me/api/portraits/women/90.jpg",
+    "email": "e3@gmail.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["FAMILY"],
+    "bio": "Friend",
+    "goal": 20,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 11,
+    "name": "Lisa Nakamura",
+    "picture": "https://randomuser.me/api/portraits/women/75.jpg",
+    "email": "l3@gmail.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["WORK"],
+    "bio": "Friend",
+    "goal": 20,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 12,
+    "name": "James Wright",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "j3@gmail.com",
+    "days_since_contact": 62,
+    "status": "on-track",
+    "tags": ["HOBBY", "TRAVEL"],
+    "bio": "Friend",
+    "goal": 20,
+    "next_due_date": "2026-05-10"
+  }
+]
