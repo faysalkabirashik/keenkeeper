@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import { toast } from "react-toastify";
+
 import {
   FiClock,
   FiArchive,
@@ -13,6 +15,39 @@ import {
 const FriendDetails = () => {
   const { id } = useParams();
   const [friend, setFriend] = useState(null);
+  const addTimelineEntry = (type) => {
+    const today = new Date();
+
+    const newEntry = {
+      id: Date.now(),
+      friendId: friend.id,
+      friendName: friend.name,
+      action: type,
+      title: `${type} with ${friend.name}`,
+      date: today.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      }),
+      time: today.toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
+    };
+
+    const oldEntries =
+      JSON.parse(localStorage.getItem("timeline")) || [];
+
+    const updated = [newEntry, ...oldEntries];
+
+    localStorage.setItem(
+      "timeline",
+      JSON.stringify(updated)
+    );
+
+    toast.success(`${type} added to Timeline`);
+  };
+
 
   useEffect(() => {
     fetch("/friends.json")
@@ -194,17 +229,26 @@ const FriendDetails = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-                <button className="h-[124px] rounded-2xl border border-gray-400 flex flex-col justify-center items-center gap-3 hover:bg-gray-50 transition">
+                <button
+                  onClick={() => addTimelineEntry("Call")}
+                  className="h-[124px] rounded-2xl border border-gray-400 flex flex-col justify-center items-center gap-3 hover:bg-gray-50 transition"
+                >
                   <FiPhone size={28} />
                   <span className="text-xl">Call</span>
                 </button>
 
-                <button className="h-[124px] rounded-2xl border border-gray-400 flex flex-col justify-center items-center gap-3 hover:bg-gray-50 transition">
+                <button
+                  onClick={() => addTimelineEntry("Text")}
+                  className="h-[124px] rounded-2xl border border-gray-400 flex flex-col justify-center items-center gap-3 hover:bg-gray-50 transition"
+                >
                   <FiMessageSquare size={28} />
                   <span className="text-xl">Text</span>
                 </button>
 
-                <button className="h-[124px] rounded-2xl border border-gray-400 flex flex-col justify-center items-center gap-3 hover:bg-gray-50 transition">
+                <button
+                  onClick={() => addTimelineEntry("Video")}
+                  className="h-[124px] rounded-2xl border border-gray-400 flex flex-col justify-center items-center gap-3 hover:bg-gray-50 transition"
+                >
                   <FiVideo size={28} />
                   <span className="text-xl">Video</span>
                 </button>
