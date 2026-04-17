@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className="dropdown dropdown-end md:hidden">
+        {/* <div className="dropdown dropdown-end md:hidden">
           <label tabIndex={0} className="btn btn-sm btn-ghost">
             ☰
           </label>
@@ -60,7 +60,40 @@ const Navbar = () => {
               <NavLink to="/stats">Stats</NavLink>
             </li>
           </ul>
+        </div> */}
+        <div className="dropdown dropdown-end md:hidden">
+            <label tabIndex={0} className="btn btn-sm btn-ghost text-xl">
+                ☰
+            </label>
+
+            <ul
+                tabIndex={0}
+                className="dropdown-content z-[1] mt-3 w-56 bg-white rounded-xl shadow-lg p-3 space-y-2"
+            >
+                <li>
+                    <NavLink to="/" className={navStyle}>
+                        <FiHome size={18} />
+                        Home
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/timeline" className={navStyle}>
+                        <LuClock3 size={18} />
+                        Timeline
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/stats" className={navStyle}>
+                        <HiOutlineChartBar size={18} />
+                        Stats
+                    </NavLink>
+                </li>
+            </ul>
         </div>
+
+        
       </div>
     </div>
   );
